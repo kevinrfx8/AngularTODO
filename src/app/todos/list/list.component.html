@@ -12,7 +12,7 @@
 </div>
 
 <div>
-    <app-todo *ngFor="let todo of todos" [todo]="todo">
+    <app-todo *ngFor="let todo of todos;let i=index" [todo]="todo" [index]="i" (onDelete)="delete($event)">
 
     </app-todo>
 </div>

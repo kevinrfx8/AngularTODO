@@ -23,4 +23,9 @@ export class TodoService {
         this.todos.push(todo);
         localStorage.setItem("TODO", JSON.stringify(this.todos));
     }
+
+    deleteTdo(index:number){
+        this.todos.splice(index,1);
+        localStorage.setItem("TODO", JSON.stringify(this.todos));
+    }
 }

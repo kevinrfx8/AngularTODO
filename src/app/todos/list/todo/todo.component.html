@@ -4,7 +4,7 @@
             {{todo.description}}
         </div>
         <div class="actions">
-            <button mat-mini-fab color="warn">
+            <button mat-mini-fab color="warn" (click)="deleteTodo()">
                 <mat-icon>remove</mat-icon>
             </button>
             <button mat-mini-fab color="accent">

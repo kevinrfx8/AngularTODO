@@ -28,4 +28,8 @@ export class ListComponent {
         this.todoService.addTodo(todo);
         this.loadTodos();
     }
+    delete(index:number){
+        this.todoService.deleteTdo(index);
+        this.loadTodos();
+    }
 }
